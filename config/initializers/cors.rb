@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'localhost:3001' #can add our hosted app like http://heroku.front_end_app or a * would allow anyone
+    origins 'example.com' #can add our hosted app like http://heroku.front_end_app or a * would allow anyone
 
     resource '*',
       headers: :any,
